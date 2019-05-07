@@ -1,0 +1,1223 @@
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    background: #ffffff;
+    text-transform: uppercase;
+    
+}
+#wrapper {
+    width: 100%;
+}
+p {
+    text-transform: none;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+/* image */
+.img-project {
+    width: 390px;
+    height: 250px;
+    cursor: pointer;
+}
+.im-label {
+    font-weight: 400;
+}
+.img-tools ul {
+    margin: 0;
+    padding-top: 22px;
+    padding-left: 0;
+}
+.img-tools ul li {
+    display: inline;
+    padding-right: 35px;
+}
+.img-tools-icon {
+    width: 80px;
+    height: 80px;
+}
+.service-img {
+    width: 120px;
+}
+/* INPUT STYLE */
+input {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+textarea {
+    overflow: auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+.input-field input {
+    font-size: 1rem;
+    border: none;
+    padding-left: 2rem;
+}
+.input-field input:focus, nav .input-field input[type=text]:valid, nav .input-field input[type=password]:valid, nav .input-field input[type=email]:valid, nav .input-field input[type=url]:valid, nav .input-field input[type=date]:valid {
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.input-field label {
+    top: 0;
+    left: 0;
+}
+
+/* Label & Title */
+
+.jdev-title h2{
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.jdev-title h2 {
+    font-size: 32px;
+}
+.behance-label a {
+    color: #ffffff;
+}
+.behance-label a:hover {
+    border-bottom: 3px solid #1B262E;
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+#project-text {
+    padding-top: 45px;
+}
+/* Button */
+.started-btn, .seemore-btn, .submit-btn, .dlcv-btn {
+    border: none;
+    border-radius: 23px;
+    background: #FFFFFF;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 145px;
+    height: 45px;
+    color: #515151;
+    font-weight: bolder;
+    font-size: 14px;
+    cursor:  pointer; 
+}
+.light {
+   background: none;
+   border: 3px #000000 solid;
+   color: #000000;
+}
+
+.dark {
+    background: none;
+    border: 3px #FFFFFF solid;
+    color: white;
+}
+.dark:hover {
+    background: white;
+    color: #515151;
+    transition: 0.9s ease-in-out;
+}
+.dark a:hover {
+    color: #515151;
+}
+.dark-2:hover {
+    background: none;
+    border: 3px #FFFFFF solid;
+    color: white;
+    transition: 0.9s ease-in-out;
+}
+.light:hover {
+    background: #282C34;
+    color: white;
+    transition: 0.3s ease-in;
+}
+.tap-gototop {
+    position: fixed;
+    z-index: 15;
+    right: 20;
+    bottom: 20;
+    cursor: pointer;
+}
+.tap-gototop img {
+    width: 50px;
+}
+/* Header */
+.jdev-header {
+   width: 100%;
+   margin: 0;
+   height: 657px;
+   color: white;
+}
+.overlay {
+    background: #1C1D21;
+    width: 100%;
+    height: 657px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.8;
+}
+.jdev-bg {
+    width: 100%;
+    height: 657px;
+    position: absolute;
+}
+.jdev-margin {
+    position: relative;
+    z-index: 2;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.jdev-logo {
+    display: block;
+    float: left;
+    padding-top: 10px;
+}
+.jdev-logo h2 {
+    font-size: 40px;
+    font-family: 'Consolas', sans-serif;
+    margin: 0;
+}
+.jdev-navigation {
+    padding: 10px;
+    margin: 0;
+    transition: .5s ease-in;
+    height: 50px;
+}
+.black {
+    background: #282C34;
+    height: 50px;  
+    position: fixed;
+    transition: .8s ease-in-out;
+    width: 100%;
+    padding: 10px;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.nav-list {
+    padding-top: 25px;
+    float: right;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 13px;
+    font-weight: bolder;
+    transition: .5s ease-in-out;
+}
+.menu-responsive {
+    display: none;
+}
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -20;
+    height: 70px;
+    width: 70px;
+  }
+.nav-list ul {
+    margin: 0;
+}
+.nav-list ul li{
+    display: inline;
+    padding-right: 25px;
+}
+.nav-list ul li a:hover {
+    border-bottom: 3px #FFFFFF solid;
+    transition: 0.3s ease-in;
+}
+#nav-toggle {
+    position: absolute;
+    left: 18px;
+    top: 22px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+}
+#nav-toggle span, span:before, span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: #ffffff;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+    top: -10px;
+}
+#nav-toggle span:after {
+    bottom: -10px;
+}
+#nav-toggle .active span {
+    background-color: transparent;
+}
+#nav-toggle .active span:before, #nav-toggle .active span:after {
+    top: 0;
+}
+#nav-toggle .active span:before {
+    transform: rotate(45deg);
+}
+#nav-toggle .active span:after {
+transform: rotate(-45deg);
+}
+.whoiam-caption {
+    width: 400px;
+    margin: 0px auto;
+    padding-top: 0px;
+    position: relative;
+    top: 120;
+}
+.dev-name h2 {
+    font-size: 55px;
+    margin: 0;
+}
+.dev-position h4  {
+    margin: 0;
+    font-weight: 500;
+    line-height: 30px;
+    padding-left: 15px;
+}
+.caption-button ul li {
+    display: inline-block;
+    padding-right: 21px;
+}
+/* About */
+.jdev-about  {
+    width: 100%;
+    height: 474px;
+    overflow: hidden;
+}
+.about-dev {
+    width: 80%;
+    margin: 0 auto; 
+    height: 474px;
+}
+.about-dev h3 {
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 25px;
+    padding-top: 120px;
+}
+.jdev-picture {
+    width: 25%;
+    height: 300px;
+    float: left;
+    padding-top: 160px;
+    padding-left: 40px;
+}
+.jdev-picture img{
+    width: 150px;
+    border-radius: 100px;
+}
+.about-dev h3 {
+    margin: 0;
+}
+.about-dev p {
+    margin: 0;
+    width: 80%;
+    font-size: 18px;
+}
+/* Services */
+.jdev-services {
+    width: 100%;
+    height: 474px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+.services-icon {
+    text-align: center;
+}
+.services-info {
+    width: 100%;
+    text-align: center;
+}
+.services-info h2 {
+    padding-top: 30px;
+    font-weight: bolder;
+    margin: 0 auto;
+}
+.services-info p {
+    margin: 0 auto; 
+    width: 80%;
+}
+.services-icon li {
+    display: inline-block;
+}
+/* Projects */
+.jdev-projects {
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    background: #1B262E;
+    padding-top: 10px;
+    overflow: hidden;
+    color: white;
+}
+.img-project {
+    display: inline-block;
+    margin: 10px;
+    background: #ccc;
+    min-width: 300px;
+}
+.project-data p {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: #464646;
+    width: 456px;
+    margin: 0;
+}
+.project-data h3 {
+    margin: 0;
+    font-size: 28px;
+}
+.jdev-bottom h3 {
+    font-family: 'Leelawadee', sans-serif;
+    text-align: center;
+}
+/* Contact */
+.jdev-contacts {
+    width: 100%;
+    height: 500px;
+    padding-top: 10px;
+    background: #005BA7;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 50px;
+}
+.interest-label h5 {
+    margin: 0;
+    text-transform: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.btn-submit {
+    background: white;
+    border: none;   
+    color:  #005BA7;
+    padding: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-weight: 'Arial', sans-serif;
+    border-radius: 3px;
+    width: 100px;
+    float: right;
+}
+.contact-form {
+    width: 29%;
+    margin: 0 auto;
+}
+.input-field {
+    padding-top: 10px;
+}
+input::placeholder {
+    color: white;
+}
+.input-field input[type='text'], .input-field input[type='email'] {
+    padding: 10px;
+    border: none;
+    background: #1A6DB6;
+    color: white;
+    border-radius: 2px;
+    border: 2px solid #ffffff;
+    width: 390px;
+}
+.input-field textarea {
+    border: none;
+    height: 100px;
+    padding: 10px;
+    width: 390px;
+}
+/* Footer */
+.jdev-footer {
+    background: #222222;
+    width: 100%;
+    padding-top: 20px;
+}
+.footer-bg {
+    width: 100%;
+}
+.contact-footer {
+    display: block;
+    width: 700px;
+    float: left;
+    height: 187px;
+    padding-left: 20px;
+}
+.contact-footer h5, .contactandloc-footer h5 {
+    margin: 0;
+    color: #535353;
+    font-size: 16px;
+}
+.address-data {
+    padding-top: 10px;
+    margin: 0;
+    padding-bottom: 15px;
+}
+.address-data h6 {
+    margin: 0;
+    font-weight: initial;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.contactandloc-footer {
+    width: 100%;
+    padding-bottom: 20px;
+}
+.contactandloc-footer label {
+    text-transform: capitalize;
+    color: white;
+    margin: 0;
+}
+.contactandloc-footer p a {
+    margin: 0;
+    color: white;
+    font-size: 13px;
+}
+.contactandloc-footer p {
+    margin: 0;
+}
+.footer-bottom {
+    text-align: center;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.footer-bottom h2 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 400;
+}
+/* Others function */
+.hide {
+    display: none;
+}
+.display {
+    display: block;
+}
+
+
+@media (min-width: 320px) and (max-width:767px) {
+    #wrapper {
+        width: 100%;
+    }
+    .jdev-header {
+        width: 100%;
+        height: 450px;
+        margin-bottom: 0;
+    }
+    .overlay {
+        width: 100%;
+        height: 450px;
+    }
+    .jdev-bg {
+        width: 100%;
+        height: 450px;
+    
+    }
+    .jdev-margin {
+        width: 100%;
+        height: 450px;
+        margin: 0;
+    }
+    .jdev-navigation {
+        padding: 10px;
+        margin: 0;
+    }
+    .nav-mobile {
+        display: block;
+        z-index: 13;
+        right: 0;
+        left: 305px;
+        cursor: pointer;
+    }
+    .nav-list ul li a {
+        padding-left: 0px;
+    }
+    .jdev-logo {
+        padding-top: 5px;
+    }
+    .black {
+        background: #282C34;
+        height: 50px;  
+        position: fixed;
+        transition: .8s ease-in-out;
+        width: 95%;
+        padding: 10px;
+        z-index: 99;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .adjust-mobile {
+        right: 5;
+    }
+    .menu-responsive  {
+        display: block;
+        cursor: pointer;
+        float: right;
+        position: absolute;
+        right: 1;
+        top: 20;
+    }
+    .menu-responsive img {
+        width: 35px;
+        height: 23px;
+    }
+    .nav-list  {
+        padding: 0px;
+        padding-right: 0px;
+        font-size: 12px;
+        width: 350px;
+    }
+    .nav-list ul {
+        margin-top: 0px;
+        width: 40%;
+        font-size: 14px;
+        display: none;
+        position: fixed;
+        background: #282C34;
+        height: 100%;
+        z-index: 12;
+        right: -20;   
+        top: 0;
+        padding-top: 60px;
+    }
+    .nav-list ul li {
+        float: none;
+    }
+    .nav-list ul li a {
+        padding-left: 3px;
+        line-height: 30px;
+    }
+    .nav-list ul li a:hover {
+        cursor: pointer;
+    }
+    .whoiam-caption {
+        width: 100%;
+        text-align: center;
+    }
+    .dev-name h2 {
+        font-size: 38px;
+    }
+    .dev-position h4 {
+        font-size: 14px;
+        line-height: 25px;
+        padding-left: 10px;
+    }
+    /* Button */
+    .started-btn, .seemore-btn, .submit-btn, .dlcv-btn {
+        width: 122px;
+        font-size: 12px;
+    }
+    .caption-button {
+        width: 100%;
+    }
+    .caption-button ul li {
+        padding-right: 10px;
+    }
+    .whoiam-caption {
+        position: relative;
+        top: 80;
+    }
+    .jdev-title h2 {
+        font-size: 30px;
+    }
+    .jdev-about {
+        width: 100%;
+        height: 600px;
+    }
+    .about-dev {
+        display: inline-block;
+        height: 700px;
+        width: 100%;
+    }
+    .about-dev h3 {
+        font-size: 24px;
+        padding-bottom: 15px;
+        padding-top: 80px;
+        width: 80%;
+        padding-left: 40px;
+    }
+    .about-dev p {
+        width: 80%;
+        padding: 20px;
+        padding-left: 40px;
+
+    }
+    .jdev-picture {
+        float: none;
+        padding-top: 40px;
+        padding-right: 100px;
+        height: 100px;
+        margin: 0 auto;
+    }
+    .img-tools-icon {
+        width: 55px;
+        height: 55px;
+    }
+    .img-tools {
+        text-align: center;
+    }
+    .img-tools ul li {
+        padding-right: 10px;
+    }
+    .jdev-services {
+        width: 100%;
+        height: 960px;
+    }
+    .services-icon {
+        width: 90%;
+    }
+    .services-info p {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .jdev-projects {
+        width: 100%;
+        height: 1000px;
+    }
+    .img-project {
+        width: 90%;
+    }
+    .jdev-bottom {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .jdev-contacts {
+        width: 100%;
+        height: 500px;
+    }
+    .contact-form {
+        width: 80%;
+    }
+    .input-field input[type='text'], .input-field input[type='email'] {
+        width: 100%;
+    }
+    .input-field textarea {
+        width: 100%;
+    }
+    .contact-form {
+        width:80%;
+    }
+    .input-field input[type='text'], .input-field input[type='email'], .input-field textarea {
+        width: 100%;
+    }
+    .btn-submit {
+        float: right;
+    }
+    .jdev-footer {
+        width: 100%;
+     }
+     .footer-bg {
+         display: inline-block; 
+     }
+     .contactandloc-footer {
+        width: 315px;
+     }
+     .contact-footer {
+         width: 340px;
+     }
+     .contactandloc-footer {
+         padding-bottom: 0px;
+         padding-left: 20px;
+     }
+     .tap-gototop {
+         position: fixed;
+     }
+}
+
+@media (min-width: 425px){
+    .nav-mobile {
+        left: 350px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .jdev-projects {
+        width: 100%;
+        height: 990px;
+    }
+    .img-project {
+        width:55%;
+    }
+    .jdev-about {
+        width: 100%;
+        height: 600px;
+    }
+    .desc-responsive {
+        text-align: center;    
+    }
+    .about-dev {
+        display: inline-block;
+        height: 500px;
+        width: 100%;
+    }
+    .about-dev h3 {
+        font-size: 24px;
+        padding-bottom: 15px;
+        padding-top: 80px;
+        width: 80%;
+        padding-left: 40px;
+    }
+    .about-dev p {
+        width: 80%;
+        padding: 20px;
+        padding-left: 40px;
+
+    }
+    .jdev-picture {
+        float: none;
+        padding-top: 40px;
+        padding-right: 100px;
+        height: 100px;
+        margin: 0 auto;
+    }
+    .img-tools-icon {
+        width: 55px;
+        height: 55px;
+    }
+    .img-tools {
+        text-align: center;
+    }
+    .img-tools ul li {
+        padding-right: 10px;
+    }
+    .jdev-services {
+        width: 100%;
+        height: 780px;
+    }
+    .services-icon {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .services-icon ul {
+        padding: 0;
+    }
+    .jdev-contacts {
+        width: 100%;
+    }
+    .contact-form {
+        width:50%;
+    }
+    .input-field input[type='text'], .input-field input[type='email'], .input-field textarea {
+        width: 100%;
+    }
+    .btn-submit {
+        float: right;
+    }
+    .jdev-footer {
+        width: 100%;
+    }
+    .footer-bg {
+        display: inline-block; 
+    }
+    .contactandloc-footer {
+        width: 600px;
+        height: 190px;
+    }
+    .contact-footer {
+        width: 300px;
+    }
+    .contactandloc-footer {
+        padding-bottom: 0px;
+        padding-left:20px;
+    }
+}
+
+@media (min-width: 378px) and (max-width: 625px) {
+    .nav-list ul {
+        width: 39%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1238px){
+    .jdev-projects {
+        width: 100%;
+        height: 990px;
+    }
+    .img-project {
+        width:50%;
+    }
+    .contact-form {
+        width:50%;
+    }
+    .input-field input[type='text'], .input-field input[type='email'], .input-field textarea {
+        width: 100%;
+    }
+    .btn-submit {
+        float: right;
+    }
+    .services-icon ul {
+        padding: 0;
+    }   
+}
+
+@media (min-width: 1980px) and (max-width: 2450px) {
+    .black {
+        height: 80px;
+    }
+    #wrapper {
+        width: 100%;
+    }
+    .jdev-header {
+        min-height: 100%;
+    }
+    .jdev-bg {
+        min-height: 100%;
+    }
+    .overlay {
+        min-height: 100%;
+    }
+    .jdev-logo h2 {
+        font-size: 68px;
+    }
+    .nav-list ul li a {
+        font-size: 22px;
+    }
+    .whoiam-caption {
+        width: 850px;
+        top: 300px;
+    }
+    .dev-name h2 {
+        font-size: 80px;
+    }
+    .dev-position h4 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .started-btn {
+        border: none;
+        border-radius: 23px;
+        background: #FFFFFF;
+        padding: 15px;
+        text-transform: uppercase;
+        width: 220px;
+        height: 75px;
+        color: #515151;
+        font-weight: bolder;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .dlcv-btn {
+        width: 220px;
+        height: 75px;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .jdev-about {
+        height: 600px;
+    }
+    .jdev-picture {
+        height: 450px;
+    }
+    .jdev-picture img {
+        width: 250px;
+        border-radius: 500px;
+    }
+    .about-dev h3 {
+        font-size: 52px;
+   }
+   .about-dev p {
+       font-size: 32px;
+   }
+   .img-tools-icon {
+       width: 120px;
+       height: 120px;
+   }
+   .img-tools {
+       margin-top: 30px;
+   }
+
+
+   .jdev-title h2 {
+       font-size: 45px;
+       padding-top: 70px;   
+   }
+   .jdev-services {
+        height: 600px;
+        padding-bottom: 80px;
+    }
+    .service-img {
+        width: 140px;
+    }
+    .services-info h2 {
+        font-size: 35px;
+        line-height: 60px;
+    }
+    .services-info {
+        padding-right: 10px;
+    }
+    .services-info p {
+        font-size: 30px;
+    }
+
+
+
+    .img-project {
+        width: 550px;
+        height: 400px;
+    }
+    .behance-label {
+        font-size: 35px;
+    }
+
+    .jdev-contacts {
+        height: 700px;
+        padding-bottom: 100px;
+    }
+    .interest-label h5 {
+        font-size: 32px;
+    }
+    .contact-form {
+        width:45%;
+    }
+    .input-field input[type='text'], .input-field input[type='email'] {
+        width: 50%;
+        height: 70px;
+        font-size: 30px;
+    }
+    .input-field textarea {
+        width: 50%;
+        height: 170px;
+        font-size: 30px;
+        padding: 15px;
+    }
+    .input-field input[type='text'], .input-field input[type='email'], .input-field textarea {
+        width: 100%;
+    }
+    .btn-submit {
+        width: 180px;
+        height: 60px;
+        font-size: 22px;
+    }
+    .tap-gototop {
+        right: 40;
+    }
+    .tap-gototop img{
+        width: 70px;
+    }
+
+    .jdev-footer {
+        height: 400px;
+    }
+    .contact-footer {
+        width: 1200px;
+        height: 300px;
+    }
+    .contact-footer h5, .contactandloc-footer h5 {
+        font-size: 28px;
+    }
+    .contact-footer h6 {
+        font-size: 25px;
+    }
+    .contactandloc-footer label {
+        font-size: 26px;
+    }
+    .contactandloc-footer p a  {
+        font-size: 25px;
+    }
+    .contactandloc-footer p {
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    .footer-bottom h2 {
+        font-size: 22px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 2560px) and (max-width: 4000px) {
+    .black {
+        height: 100px;
+    }
+    #wrapper {
+        width: 100%;
+    }
+    .jdev-header {
+        min-height: 100%;
+    }
+    .jdev-bg {
+        min-height: 100%;
+    }
+    .overlay {
+        min-height: 100%;
+    }
+    .jdev-logo h2 {
+        font-size: 70px;
+    }
+    .nav-list ul li a {
+        font-size: 25px;
+    }
+    .whoiam-caption {
+        width: 850px;
+        top: 300px;
+    }
+    .dev-name h2 {
+        font-size: 100px;
+    }
+    .dev-position h4 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .started-btn {
+        border: none;
+        border-radius: 23px;
+        background: #FFFFFF;
+        padding: 15px;
+        text-transform: uppercase;
+        width: 220px;
+        height: 75px;
+        color: #515151;
+        font-weight: bolder;
+        font-size: 23px;
+        cursor: pointer;
+    }
+    .dlcv-btn {
+        width: 220px;
+        height: 75px;
+        padding: 15px;
+        font-size: 23px;
+    }
+    .jdev-about {
+        height: 700px;
+
+    }
+    .jdev-picture {
+        height: 450px;
+    }
+    .jdev-picture img {
+        width: 320px;
+        border-radius: 500px;
+    }
+    .about-dev h3 {
+         font-size: 62px;
+    }
+    .about-dev p {
+        font-size: 40px;
+    }
+    .img-tools-icon {
+        width: 130px;
+        height: 130px;
+    }
+    .img-tools {
+        margin-top: 30px;
+    }
+    .jdev-title h2 {
+        font-size: 68px;
+        padding-top: 70px;   
+    }
+    .jdev-services {
+        height: 800px;
+        padding-bottom: 80px;
+    }
+    .service-img {
+        width: 250px;
+    }
+    .services-info h2 {
+        font-size: 40px;
+        line-height: 80px;
+    }
+    .services-info {
+        padding-right: 20px;
+    }
+    .services-info p {
+        font-size: 34px;
+    }
+    .services-list {
+        margin-bottom: 100px;
+    }
+    .img-project {
+        width: 800px;
+        height: 500px;
+    }
+    .behance-label {
+        font-size: 40px;
+    }
+    .jdev-contacts {
+        height: 800px;
+        padding-bottom: 100px;
+    }
+    .interest-label h5 {
+        font-size:40px;
+    }
+    .contact-form {
+        width:45%;
+    }
+    .input-field input[type='text'], .input-field input[type='email'] {
+        width: 50%;
+        height: 70px;
+        font-size: 30px;
+    }
+    .input-field textarea {
+        width: 50%;
+        height: 170px;
+        font-size: 30px;
+        padding: 15px;
+    }
+    .input-field input[type='text'], .input-field input[type='email'], .input-field textarea {
+        width: 100%;
+    }
+    .btn-submit {
+        width: 200px;
+        height: 70px;
+        font-size: 27px;
+    }
+    .tap-gototop {
+        right: 40;
+    }
+    .tap-gototop img{
+        width: 90px;
+    }
+    .jdev-footer {
+        height: 400px;
+    }
+    .contact-footer {
+        width: 1200px;
+        height: 300px;
+    }
+    .contact-footer h5, .contactandloc-footer h5 {
+        font-size: 28px;
+    }
+    .contact-footer h6 {
+        font-size: 25px;
+    }
+    .contactandloc-footer label {
+        font-size: 26px;
+    }
+    .contactandloc-footer p a  {
+        font-size: 25px;
+    }
+    .contactandloc-footer p {
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    .footer-bottom h2 {
+        font-size: 30px;
+    }
+}
